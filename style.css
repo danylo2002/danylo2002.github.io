@@ -14,6 +14,7 @@ body{
 	z-index: 10000; 
 	top: 0;
 	z-index: 100000;
+	min-width: 600px;
 }
 .top-menu-btn{
 	position: relative;
@@ -35,6 +36,7 @@ body{
 .box{
 	position: relative;
 	width: 100%;
+	min-width: 600px;
 }
 #ad-box{
 	height: 200px;
@@ -154,20 +156,16 @@ body{
 #box3{
 	height: 1000px;
 	background-color: #aaa;
+	text-align: center;
 }
 .box3-card{
-	position: absolute;
+	position: relative;
 	height: 800px;
 	width: 400px;
 	padding: 50px;
 	top: 50px;
 	background-color: #222;
-}
-#box3-card1{
-	right: 51%;
-}
-#box3-card2{
-	left: 51%;
+	display: inline-block;
 }
 .box3-card-tittle{
 	color: #fff;
@@ -347,4 +345,11 @@ body{
 }
 #box6 table th:hover img{
 	transform: scale(1.1);
+}
+@media(max-width: 800px){
+	#box4-more{
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
 }
