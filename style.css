@@ -1,20 +1,16 @@
-@font-face{
-	font-family: wsws;
-	src: url("18427.ttf");
-}
 body{
 	background-color: #222;
-	margin: 0;	
+	margin: 0;
+	padding-top: 60px;
 }
 #top-menu{
-	position: sticky;
+	position: fixed;
 	height: 60px;
 	width: 100%;
 	background-color: #000;
 	z-index: 10000; 
 	top: 0;
 	z-index: 100000;
-	min-width: 600px;
 }
 .top-menu-btn{
 	position: relative;
@@ -36,7 +32,6 @@ body{
 .box{
 	position: relative;
 	width: 100%;
-	min-width: 600px;
 }
 #ad-box{
 	height: 200px;
@@ -156,16 +151,20 @@ body{
 #box3{
 	height: 1000px;
 	background-color: #aaa;
-	text-align: center;
 }
 .box3-card{
-	position: relative;
+	position: absolute;
 	height: 800px;
 	width: 400px;
 	padding: 50px;
 	top: 50px;
 	background-color: #222;
-	display: inline-block;
+}
+#box3-card1{
+	right: 51%;
+}
+#box3-card2{
+	left: 51%;
 }
 .box3-card-tittle{
 	color: #fff;
@@ -205,151 +204,4 @@ body{
 }
 #top-btn3 .tmb-menu-btn{
 	width: 200px;	
-}
-#box4{
-	height: 1000px;
-	color: #fff;
-	background-color: #0f0		
-}
-#box4-more{
-	position: absolute;
-	width: 800px;
-	height: 800px;
-	overflow: hidden;
-	color: #fff;
-	font-size: 30px;
-	top: 100px;
-	right: 40%;
-}
-#box4-simple{
-	position: absolute;
-	left: 60%;
-	width: 400px;
-	min-height: 400px;
-	background-color: #ddd;
-	color: #000;
-}
-#box4-simple-buttons{
-	width: 100%;
-	height: 100px;
-	background-color: #bbb;
-}
-.box4-simple-button{
-	position: absolute;
-	color: #000;
-	padding: 10px;
-	height: 80%;
-	font-size: 25px;
-	text-align: center;
-}
-#box4-simple-button1{
-	width: 120px;
-	left: 0;
-}
-#box4-simple-button2{
-	width: 120px;
-	left: 125px;
-}
-#box4-simple-button3{
-	width: 120px;
-	left: 250px;	
-}
-#box4-simple-content{
-	padding-top: 2px;
-
-}
-#addition-top-menu{
-	color: #fff;
-	text-align: right;
-}
-#addition-top-menu a{
-	text-decoration: none;
-	color: #fff;
-}
-#addition-top-menu a:hover{
-	text-decoration: underline;
-}
-#box4-more1 table{
-	background-color: rgba();
-}
-#box4-more2 table{
-	background-color: rgba();
-}
-#box4-more3 table{
-	background-color: rgba();
-}
-#footer{
-	background-color: #111;
-	padding-top: 
-}
-.box5-card{
-	overflow-y: hidden;
-}
-.box5-card-img{
-	width: 100%;
-}
-.box-card .date{
-	color: #ff0;
-	font-size: 30px;
-	font-family: fantasy;
-}
-.box5-card .name{
-	color: #fff;
-	font-size: 50px;
-	font-family: wsws;
-}
-.box5-card .main{
-	color: #fff;
-	font-size: 30px;
-	text-align: center;
-}
-.box5-card .text{
-	position: relative;
-	margin-right: 
-	margin-left: 
-}
-::-webkit-scrollbar{
-	background-color: #1354;
-}
-::-webkit-scrollbar-thumb{
-	background-color: #567;
-	border-radius: 20px;
-	background: linear-gradient(to bottom,#000, #000);
-}
-#box6{
-	padding-top: 100px;
-	padding-bottom: 100px;
-}
-#box6 table{
-	margin: auto;
-}
-#box6 table th{
-	background-color: #345;
-	height: 250px;
-	width: 250px;
-	position: relative;
-	overflow: hidden;
-	box-shadow: 0 0 10px #000;
-	transform: skew(0deg);
-	border-radius: 10px/50%;
-	border-bottom-right-radius: 50px;
-	border-top-left-radius: 50px;
-}
-#box6 table img{
-	width: 100%;
-	position: absolute;
-	left: 0;
-	top: 0;
-	transition-duration:1s; 
-	transition-property: 
-}
-#box6 table th:hover img{
-	transform: scale(1.1);
-}
-@media(max-width: 800px){
-	#box4-more{
-		width: 90%;
-		margin-left: 5%;
-		margin-right: 5%;
-	}
 }
